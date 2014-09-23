@@ -1,0 +1,32 @@
+<!doctype html>
+#html("common:static/js/require.js")
+
+    #head()
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>$title</title>
+        #require("common:static/css/style.css")
+    #end## end head
+
+    #body()
+        <div id="wrapper">
+            #widget("common:widget/header/header.vm" "var:navs=$navs")
+
+            #block("beforecontent")#end
+
+            <div id="middle" class="container">
+                #block("content")#end
+            </div>
+
+            #block("aftercontent")#end
+
+            #widget("common:widget/footer/footer.vm")
+        </div>
+
+        #require("common:page/layout.vm")
+    #end## end body
+
+#end## end html

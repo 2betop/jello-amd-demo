@@ -1,0 +1,17 @@
+#extends("common:page/layout.vm")
+
+    #block("content")
+        <div id="main" style="height:400px"></div>
+
+        #script()
+        define('router', function() {
+            require(['/app/zrender.js'], function (app) {
+                app();
+            });
+        });
+        require(['router']);
+        #end
+    #end## end content
+
+    #require("amdtest:page/zrenderasync.vm");
+#end## end extends

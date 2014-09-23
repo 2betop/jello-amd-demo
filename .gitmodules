@@ -1,3 +1,0 @@
-[submodule "plugin"]
-	path = common/plugin
-	url = https://github.com/2betop/fis-plus-smarty-plugin
