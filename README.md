@@ -14,8 +14,8 @@ Jello amd 测试项目
 1. 修改 fis-conf.js
 
     ```javascript
-        fis.config.set('modules.postprocessor.vm', 'amd');
-        fis.config.set('modules.postprocessor.js', 'amd');
+    fis.config.set('modules.postprocessor.vm', 'amd');
+    fis.config.set('modules.postprocessor.js', 'amd');
     ```
 2. 修改 framework 为新的 [mod-amd.js](https://raw.githubusercontent.com/fex-team/mod/master/mod-amd.js)，**或者可以直接使用 els.js 或者 require.js. 原来的 mod.js 已经不能使用了。**
 3. 更多信息请查看 [fis-postprocessor-amd 说明](https://github.com/fex-team/fis-postprocessor-amd)
