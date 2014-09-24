@@ -13,5 +13,5 @@
         #end
     #end## end content
 
-    #require("amdtest:page/zrenderasync.vm");
+    #require("amdtest:page/zrenderasync.vm")
 #end## end extends

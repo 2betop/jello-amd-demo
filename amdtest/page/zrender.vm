@@ -10,5 +10,5 @@
         #end
     #end## end content
 
-    #require("amdtest:page/zrender.vm");
+    #require("amdtest:page/zrender.vm")
 #end## end extends

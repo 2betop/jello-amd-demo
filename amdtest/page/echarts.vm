@@ -10,5 +10,5 @@
         #end
     #end## end content
 
-    #require("amdtest:page/echarts.vm");
+    #require("amdtest:page/echarts.vm")
 #end## end extends

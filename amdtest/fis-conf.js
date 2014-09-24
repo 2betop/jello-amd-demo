@@ -1,5 +1,5 @@
 fis.config.set('namespace', 'amdtest');
-fis.config.set('modules.postprocessor.tpl', 'amd');
+fis.config.set('modules.postprocessor.vm', 'amd');
 fis.config.set('modules.postprocessor.js', 'amd');
 
 fis.config.set('settings.postprocessor.amd', {
