@@ -7,6 +7,11 @@ Jello amd 测试项目
 
 **我们的目标是支持所有的 amd 用法，如果发现有不支持的用法，请提交示例，我们第一时间修复！**
 
+## 为什么要用 amd
+
+现有太多 amd 组件、模块都是以 amdjs 规范使用的，原来的 mod.js 不支持，导致每次都要手动修改后才能在 fis 中使用。
+带来的坏处主要是不便于更新，和
+
 ## 如何让 jello 项目 支持 amd?
 
 默认 jello 采用的还是原来的 mod.js 方案，如果要完全支持 amd, 则需要做以下配置。
@@ -17,7 +22,7 @@ Jello amd 测试项目
     fis.config.set('modules.postprocessor.vm', 'amd');
     fis.config.set('modules.postprocessor.js', 'amd');
     ```
-2. 修改 framework 为新的 [mod-amd.js](https://raw.githubusercontent.com/fex-team/mod/master/mod-amd.js)，**或者可以直接使用 els.js 或者 require.js. 原来的 mod.js 已经不能使用了。**
+2. 修改 framework 为新的 [mod-amd.js](https://raw.githubusercontent.com/fex-team/mod/master/mod-amd.js)，**或者可以直接使用 [esl.js](https://github.com/ecomfe/esl) 或者 [require.js](https://github.com/jrburke/requirejs). 原来的 mod.js 已经不能使用了。**
 3. 更多信息请查看 [fis-postprocessor-amd 说明](https://github.com/fex-team/fis-postprocessor-amd)
 
 ## 兼容性问题
