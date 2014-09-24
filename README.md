@@ -33,7 +33,7 @@ Jello amd 测试项目
 
 ## 注意
 
-由于 FIS 产出的 module id 为这种格式 ns:path/xxxx, require.js 为认为它是 url 导致发送 script 请求而报错。
+由于 FIS 产出的 module id 为这种格式 ns:path/xxxx, require.js 认为它是 url 导致发送 script 请求而报错。
 
 需要对 require.js 做修改，直接在最下面加上如下配置
 
