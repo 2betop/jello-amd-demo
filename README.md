@@ -12,6 +12,7 @@ Jello amd 测试项目
 默认 jello 采用的还是原来的 mod.js 方案，如果要完全支持 amd, 则需要做以下配置。
 
 1. 修改 fis-conf.js
+
     ```javascript
         fis.config.set('modules.postprocessor.vm', 'amd');
         fis.config.set('modules.postprocessor.js', 'amd');
